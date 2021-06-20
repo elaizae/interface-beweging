@@ -1,0 +1,185 @@
+html{
+    margin: 0;
+    background-color: black;
+overflow: hidden;
+}
+
+body {
+  margin: 0;  
+   
+}
+
+@keyframes spin {
+    
+    0% {  opacity: 100%}
+    100% { opacity: 0% }
+} 
+
+#loader{
+    position: fixed;
+    display: block;
+     width: 20%;
+     margin-top: 8em;
+     margin-left: 35em;
+     z-index: 100;
+     margin-right: 0;
+
+}
+
+
+
+
+
+
+#icons{
+    opacity: 0;
+    z-index: 204;
+    
+}
+
+.hide-loader{
+    display: none;
+    }
+
+#floating{
+    background-image:url("images/iconbackground.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size:48%;
+    width: 18%;
+    margin-left: -100em;
+    margin-bottom: 2em;
+    margin-top: 12em;
+    animation-name: animateb;
+    animation-duration: 1s;
+    animation-delay: 5.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    z-index: 200;
+    position:static;
+}
+#floating:hover{
+    background-image:url("images/iconbackground2.svg");
+}
+
+#walk:hover{
+    background-image:url("images/iconbackground2.svg");
+}
+
+#nohat:hover{
+    background-image:url("images/iconbackground2.svg");
+}
+.iconclick{
+    background-image:url("images/iconbackground2.svg");
+}
+
+#bg{
+   margin-top: -15em;
+    position: fixed;
+    width: 115%;
+    display: block;
+   margin-left: -1em;
+    opacity: 0;
+    animation-name: loadit;
+    animation-duration: 1s;
+    animation-delay: 6.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loadit { 
+    from{ opacity: 0; } 
+    to{ opacity: 1;}
+  } 
+@keyframes animatebottom { 
+    from{ margin-left:-100em; opacity: 0; } 
+    to{ margin-left:-1em;  opacity: 1;}
+  }
+
+  @keyframes animateb { 
+    from{ margin-left:-100em; opacity: 0; } 
+    to{ margin-left:-2em;  opacity: 1;}
+  }
+
+#walk{
+    background-image:url("images/iconbackground.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size:55%;
+    width: 15%;
+    margin-bottom: 3em;
+    margin-left: -100em;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+    animation-delay: 5.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+ 
+    z-index: 200;
+}
+
+#nohat{
+    background-image:url("images/iconbackground.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size:55%;
+    width: 15%;
+    margin-left: -100em;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+    animation-delay: 5.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+   
+    position:static;
+    z-index: 200;
+
+    
+}
+
+#videos {
+    display: block;
+  position: absolute;
+  margin-top:-13em;
+  opacity: 0;
+    width: 100em;
+   
+    
+}
+
+#videos2 {
+    display: block;
+  position: absolute;
+  margin-top:-13em;
+  opacity: 0;
+    width: 95em;
+
+    
+}
+
+#videos3 {
+    display: block;
+  position: absolute;
+opacity: 0;
+margin-top:-13em;
+    width: 100em;
+ 
+    
+}
+
+.plsplay{
+    animation: video-animatie ease-in;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+
+}
+
+@keyframes video-animatie {
+   from   { opacity: 0; 
+}
+   to { opacity: 1; 
+}
+  }
